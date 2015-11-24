@@ -1,0 +1,1339 @@
+html, body, input, textarea, select, option {
+	font-family: arial, helvetica, geneva, sans-serif;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+}
+body {
+	font-size: smaller;
+}
+
+/*********/
+/* Privé */
+/*********/
+div#navigation {
+	text-align: center;
+	border: 2px solid #000;
+	line-height: 1.2em;
+	color: #fff;
+	font-weight: bold;
+	padding: 1px 0;
+	background: #999;
+}
+div#navigation a {
+	padding: 0 3px;
+	color: #000 ;
+	text-decoration: none;
+	font-weight: bold;
+}
+div#navigation a:visited {
+	color: #000 ;
+}
+div#navigation a span {
+	font-weight: normal;
+}
+div#navigation a:hover {
+	color: #000 ;
+	background: #fff;
+}
+div#identification {
+	padding-left: 0.3em;
+	margin-bottom: 1px;
+	border-bottom: 1px solid #777;
+}
+div#identification div#logout {
+	float: right;
+	text-align: right;
+	width: 40%;
+}
+div#identification div#login {
+	float: left;
+	text-align: left;
+	width: 40%;
+}
+div#identification div#site {
+	text-align: center;
+	line-height: 1em;
+	font-size: 1.2em;
+	letter-spacing: 3px;
+	color: #ccc;
+}
+#page {
+	background: #fff;
+	margin: 1em;
+}
+#chemin {
+	padding: 0.5em;
+	border-bottom: 2px solid #000;
+	font-weight: bold;
+	margin-bottom: 2em;
+}
+#chemin a {
+}
+#chemin span {
+	font-weight: normal;
+}
+#chemin span.prenom,
+#chemin span.nom {
+	font-weight: inherit;
+}
+.arr {
+	padding: 0 0.5em;
+}
+
+/**********/
+/* Public */
+/**********/
+html,
+body.public {
+	background: #ccc;
+	background: #dfdfdf;
+	background: #fff;
+}
+#conteneur {
+	margin: 0 auto;
+	margin-top: 7px;
+	width: 990px;
+	width: 770px;
+	width: 800px;
+	background: #fff;
+}
+#conteneur #page {
+	margin: 0;
+	padding: 0;
+	padding: 0px 5px;
+	padding: 0 3px 0 4px;
+	padding: 0;
+}
+#entete {
+	height: 107px;
+	margin-bottom: 7px;
+	border-bottom: 1px solid #ab0132;
+	border-bottom: 0px;
+}
+#pied {
+	margin: 7px 0 15px 0;
+}
+#pied,
+#entete {
+	background: #fff url('/img/couleurs_Francophonie.gif') no-repeat bottom center; 
+}
+#entete h1 {
+	margin: 0 auto;
+	padding: 12px 150px 0 0;
+	font-size: 1.8em;
+	text-align: center;
+	letter-spacing: 1px;
+	word-spacing: 3px;
+	font-weight: normal;
+}
+	/*
+	color: #777;
+	letter-spacing: 0;
+	word-spacing: 0;
+	*/
+#entete h1.mooc {
+	font-size: 1.4em;
+	padding-top: 20px;
+}
+#entete #logo {
+	float: left;
+	padding: 4px 10px 3px 10px;
+}
+h1.foad {
+	font-weight: normal;
+	font-size: 1.5em;
+	margin-top: 0;
+}
+h1.accueil {
+	margin: 1.2em 0;
+}
+div.accueil {
+	margin: 1em 0;
+}
+div div.accueil {
+	margin: 0;
+}
+.titreSession h1,
+.titreSession h2,
+.titreSession h4,
+.titreSession h3 {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	line-height: 1.2em;
+}
+.titreSession h3 {
+	font-variant: small-caps;
+}
+.titreSession h1 {
+	line-height: 1em;
+}
+.titreSession h2 {
+	font-size: 1.4em;
+}
+/*
+  ECRAN SPLASH
+*/
+#splash {
+	margin: 3em auto;
+	border: 1px solid #fc0;
+	width: 700px;
+	padding: 0.3em 0.5em;
+}
+#splash h1 {
+	text-align: left;
+	font-size: 1em;
+	
+}
+#splash {
+	
+}
+#splash {
+	
+}
+span.sur {
+	font-weight: bold;
+	background: #ff7;
+}
+
+.pj {
+	clear: left;
+	padding-bottom: 0.5em;
+}
+.pj .vignette {
+	display: block;
+	float: left;
+	margin: 0 1em 1em 0;
+}
+.pj .vignette img {
+	border: 1px solid #ccc;
+}
+img {
+	outline: 0px;
+}
+
+
+
+
+.encadre {
+	padding: 0 1em;
+	margin-left: 1em;
+	margin-top: 1em;
+	border: 1px solid #ccc;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+form.identification table {
+	margin: 2em auto;
+}
+select option {
+	padding-right: 5px;
+}
+input, select, option {
+	vertical-align: middle;
+}
+option {
+	padding: 0 0.2em;
+}
+input.upload {
+	font-family: arial, helvetica, geneva, sans-serif;
+}
+#pwdMooc {
+	display: none;
+}
+/*
+input, select, textarea {
+	border: 1px solid #999;
+}
+input:focus,
+textarea:focus {
+	border: 1px solid #000;
+}
+*/
+
+
+a {
+	color: #009;
+	text-decoration: underline;
+}
+a div {
+	text-decoration: underline;
+}
+a:visited {
+	color: #600;
+}
+a:hover {
+	color: #000;
+}
+a.extern {
+	background: url("/img/extern.gif") no-repeat right center;
+	padding-right: 14px;
+}
+.bl {
+	display: block;
+}
+
+.aide {
+	cursor: help;
+	background: #000 ;
+	color: #fff;
+	border: 1px solid #ccc;
+	padding: 0px 3px;
+	font-weight: bold;
+	font-size: smaller;
+	line-height: 1em;
+}
+.reinitialiser {
+	font-size: smaller;
+	padding-right: 2em;
+}
+
+p {
+	margin: 0.5em 0;
+}
+p.j {
+	text-align: justify;
+}
+ol,
+ul {
+	margin: 0.5em 0;
+	margin-left: 2em;
+	padding: 0;
+}
+ol li,
+ul li {
+	margin: 0.4em 0 ;
+}
+ul li {
+	list-style-type: square;
+}
+b, strong {
+/*
+	font-size: 90%;
+*/
+}
+em {
+	font-style: normal;
+	font-weight: bold;
+}
+.majuscules {
+	text-transform: uppercase;
+}
+.normal {
+	font-weight: normal;
+}
+.espace {
+	color: #777;
+	padding: 0 1px 0 2px;
+}
+.date .espace {
+	color: #444;
+	font-weight: normal;
+}
+.champ {
+	font-weight: bold;
+	font-size: 90%;
+	color: #555;
+}
+.champth {
+	font-weight: bold;
+	font-size: 90%;
+	color: #333;
+}
+.chp1,
+.chp {
+	font-weight: bold;
+}
+p .chp {
+	color: #000;
+}
+.chp1,
+th .chp {
+	color: #777;
+}
+div.cadre,
+div.apercu,
+div.consignesForm,
+div.msgok,
+div.erreur {
+	padding: 0em 0.5em;
+	margin: 1em 2px;
+}
+div.cadre,
+div.apercu {
+	border: 1px solid #333;
+	padding: 0.5em;
+	background: #fff;
+}
+div.encart {
+	border: 1px solid #999;
+	margin: 1em 2px;
+	padding: 0.5em;
+	
+}
+.consignesForm {
+	border: 1px solid #ccc;
+}
+div.consignes {
+	line-height: 1em;
+	position: relative;
+	top: -3px;
+}
+
+.msgok {
+	font-weight: bold;
+	color: #090;
+	font-size: 95%;
+}
+div.msgok {
+	border: 1px solid #090;
+}
+.erreur {
+	font-weight: bold;
+	color: #c00;
+	font-size: 95%;
+}
+div.erreur {
+	border: 1px solid #f00;
+}
+.erreur_champ {
+	color: #333;
+}
+ul.erreur li {
+	margin: 0.3em 0 ;
+}
+.dossier_candidature p.signature {
+	margin-bottom: 0.3em;
+}
+ul.signature,
+ul.signature li {
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+
+.navig a {
+	font-weight: bold;
+	margin: 0 1em;
+}
+
+/*
+.erreur a {
+	color: #c00;
+}
+.erreur a:hover {
+	color: #000;
+}
+*/
+table.tableau td.r,
+table.tableau th.r,
+.r {
+	text-align: right;
+}
+table.tableau td.c,
+.c {
+	text-align: center;
+}
+.s {
+	font-size: smaller;
+}
+.normal {
+	font-weight: normal;
+}
+.narrow {
+	font-family: "Arial Narrow", Arial, sans-serif;
+}
+acronym,
+.help {
+	cursor: help;
+}
+
+input.b,
+p.c input {
+	font-weight: bold;
+}
+
+
+h1 {
+	text-align: center;
+	margin-top: 0;
+	font-size: 1.6em;
+}
+hr.clear {
+	clear: both;
+	color: #ccc;
+	background: #ccc;
+	margin: 2em 0em ;
+}
+h2 {
+	font-size: 1.5em ;
+}
+h3 {
+	font-size: 1.3em ;
+}
+h2, h3 {
+	margin-top: 1em;
+	margin-bottom: 0.2em;
+}
+
+hr.saut {
+	color: #000;
+	background: #000;
+	margin: 4em 0 ;
+}
+
+.dossier_candidature div.recherche {
+	float: right;
+	width: 30%;
+	margin: 0 ;
+	padding: 0;
+}
+.dossier_candidature div.historique {
+	float: right;
+	margin: 0 ;
+	padding: 0;
+}
+.dossier_candidature div.historique div,
+.dossier_candidature div.recherche div {
+	margin-left: 0.5em;
+	padding: 1px 0.5em;
+	border: 1px solid #ccc;
+	background: #fff;
+}
+
+div.ancien,
+div.diplome {
+	border: 1px solid #999;
+	padding: 0.3em 1em;
+	margin: 1px 0;
+}
+/*
+div.diplome h3 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-size: 1.1em;
+}
+*/
+div.diplome ul,
+div.ancien ul {
+	margin: 0;
+	padding: 0;
+}
+div.diplome ul li,
+div.ancien ul li {
+	margin: 0.3em 0;
+	padding: 0;
+	margin-left: 1em;
+}
+
+.undiplome {
+	border: 1px solid #ccc;
+	padding: 0.2em;
+}
+.undiplome:hover {
+	border: 1px solid #999;
+	background: #ffc;
+}
+
+
+h1.promo,
+.dossier_candidature h1 {
+	text-align: left;
+	margin-bottom: 0.2em;
+	font-weight: normal;
+}
+.dossier_candidature h2 {
+	border-bottom: 1px solid #999;
+	font-size: 1.2em;
+	margin: 0.5em 0 0 0;
+	color: #777;
+}
+.dossier_candidature p {
+	margin: 0.7em 0;
+}
+.dossier_candidature table.tableau {
+	margin: 0 ;
+}
+.dossier_candidature table.tableau th  {
+	text-align: center;
+	color: #777;
+}
+.dossier_candidature div {
+	margin-top: 0.7em;
+	margin-bottom: 0.1em;
+}
+.dossier_candidature table.donnees {
+	margin: 0.3em 0 0 0;
+}
+
+table {
+	border-collapse: collapse;
+}
+td {
+	padding: 1px 3px;
+/*
+	border: 2px solid #fff;
+	border: 2px solid #fff;
+*/
+}
+
+table.pwd {
+	margin: 0 0 0 3px;
+	padding: 0;
+	font-size: smaller;
+	line-height: 1em;
+}
+table.pwd td,
+table.pwd th {
+	margin: 0;
+	padding: 0 3px;
+}
+table.pwd th {
+	text-align: right;
+	font-weight: normal;	
+}
+table.pwd td code {
+	font-weight: normal;
+}
+
+/*
+	margin : 1em auto;
+	text-align: center;
+*/
+table.donnees {
+	margin: 0.7em 0 0 0;
+}
+table.donnees th {
+	line-height: 1.2em;
+	vertical-align: top;
+	text-align: right;
+	font-weight: normal;
+	padding: 1px 2px 1px 0;
+}
+table.donnees td {
+	line-height: 1.2em;
+	vertical-align: top;
+	padding: 1px 2px;
+	color: #000;
+}
+
+span.date {
+	/*
+	font-family: 'courier new', monospace;
+	font-weight: bold;
+	*/
+	padding: 0 2px;
+}
+div.date_maj {
+	float: right;
+	margin: 0;
+	padding: 0;
+	font-size: smaller;
+}
+table.ancien {
+	border-collapse: collapse;
+	margin: 0;
+}
+table.ancien tbody {
+	padding: 0 3px;
+}
+table.ancien th,
+table.ancien td {
+	line-height: 1.1em;
+	padding: 2px;
+	border: 1px solid #fff;
+}
+table.ancien th {
+	vertical-align: top;
+	text-align: right;
+	padding-left: 3px;
+	font-size: smaller;
+	font-size: smaller;
+}
+table.ancien td {
+	vertical-align: top;
+}
+h2.formulaire {
+	margin: 1em 4px 0 2px;
+	margin: 0.7em 2px 0 2px;
+	padding: 2px 3px 3px 7px;
+	font-size: 1.3em;
+	text-align: left;
+	font-weight: bold;
+	line-height: 1em;
+	background: #ccc;
+	background: #bbb;
+	/*
+	background: #dfdfdf;
+	border-bottom: 1px solid #777;
+	background: #dfdfdf url('/img/couleursFrancophonie.gif') no-repeat bottom -4px center; 
+	background: #ab0132;
+	color: #fff;
+	*/
+}
+
+table.criteres {
+	padding: 1px;
+	background: #000;
+}
+table.data,
+table.formulaire {
+	margin : 0 auto;
+}
+table.data tr,
+table.formulaire tr {
+	background: #dfdfdf;
+}
+table.data tr td,
+table.formulaire tr td {
+	border: 2px solid #fff;
+}
+.aex,
+table.formulaire tr.aex {
+	background: #cfc;
+}
+table.data tr.sous,
+table.formulaire tr.sous {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+table.data th,
+table.formulaire th {
+	text-align: right;
+	vertical-align : top;
+	padding: 2px 5px;
+	font-size: 90%;
+	font-weight: bold;
+	border: 2px solid #fff;
+}
+label.formulaire {
+	font-size: 90%;
+	font-weight: bold;
+	color: #333;
+}
+label.formulaire input {
+	font-size: 100%;
+}
+table.formulaire th {
+	padding: 3px 5px;
+}
+table.data td,
+table.formulaire td {
+	text-align: left;
+	padding: 2px 5px;
+}
+table.formulaire table th {
+	text-align: center;
+	border: 0px solid #fff;
+	font-size: smaller;
+}
+table.formulaire table th,
+table.formulaire table td {
+	padding: 2px;
+	line-height: 1em;
+}
+table.formulaire td div {
+	margin-top: 4px;
+}
+table.donnees, th
+table.data th,
+table.formulaire th,
+table.data td strong,
+table.formulaire td strong {
+	color: #333;
+}
+table.data td p,
+table.formulaire td p {
+	margin: 4px 0;
+}
+
+
+label {
+	display: inline;
+}
+label.cnf {
+	display: block;
+	float: left;
+	width: 12em;
+	margin-right: 1em;
+}
+label.cnf:hover {
+	background: #fff;
+}
+label.sel {
+	background: #fc0;
+}
+label.case:hover {
+	background: #fff;
+}
+
+textarea,
+input {
+	padding: 1px 2px;
+}
+input.b {
+	font-weight: bold;
+}
+optgroup {
+	background: #ccc;
+	text-align: right;
+	font-style: normal;
+}
+table.tableau th.annee,
+.annee {
+	background: #333;
+	color: #fff;
+	text-align: right;
+	font-style: normal;
+}
+optgroup option {
+	background: #fff;
+	text-align: left;
+	color: #000;
+}
+.Oui {
+	background: #0f0 ;
+}
+.Non {
+	background: #f33 ;
+}
+span.Oui, span.Non {
+	padding: 0 2px;
+}
+
+table.tableau {
+	margin: 0 auto;
+	text-align: center;
+}
+table.tableau caption {
+	margin: 0.5em auto;
+	text-align: center;
+	font-weight: bold;
+}
+table.tableau tr.pair {
+	background: #ddd;
+}
+table.tableau thead th {
+	background: #999;
+}
+table.tableau th,
+table.tableau td {
+	margin: 2px;
+	padding: 2px 5px;
+	text-align: left;
+	vertical-align: middle;
+	border: 1px solid #777;
+}
+table.tableau thead th {
+	text-align: center;
+	color: #fff;
+}
+
+table .conteneur {
+	float: left;
+	margin: 0 1em;
+}
+table tr th.invisible,
+table.formulaire td.invisible,
+table.stats thead th.invisible,
+table.tableau thead th.invisible {
+	background: #fff;
+	border: 0px;
+}
+table.stats td.invisible,
+table.tableau td.invisible {
+	background: #fff;
+	border: 0px;
+}
+tr.invisible, td.invisible {
+	background: #fff;;
+}
+table tr th.invisible2,
+table.tableau thead th.invisible2,
+table.tableau td.invisible2 {
+	border: 1px solid #bbb;
+	color: #777;
+}
+
+table.formulaire td.separation {
+	background: #777;
+	padding: 1px;
+}
+
+
+table.pres {
+	margin: 1em auto;
+	text-align: center;
+}
+table.pres caption {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	border: 1px solid #ccc;
+}
+table.pres table.stats caption {
+	border: 0px;
+}
+table.pres th,
+table.pres td {
+	text-align: center;
+	vertical-align: top;
+}
+
+table.stats {
+	margin: 0 auto;
+	text-align: center;
+}
+table.stats caption {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 0.2em;
+}
+table.stats thead,
+table.stats tbody,
+table.stats tfoot {
+/*
+	border: 2px solid #999;
+*/
+}
+table.stats th,
+table.stats td {
+	border: 1px solid #999;
+	padding: 1px 3px;
+}
+table.stats th {
+	font-weight: bold;
+	font-size: 0.9em;
+}
+table.stats td {
+	text-align: right;
+}
+table.stats td.l {
+	text-align: left;
+}
+table.stats tbody th {
+	text-align: left;
+}
+table.stats th.total {
+	text-align: right;
+}
+table.stats tfoot th.nob {
+	border: 0px;
+}
+
+table.data {
+}
+
+.actif1,
+table.tableau tr td.actif1 {
+	background: #7f7;
+}
+.actif0,
+table.tableau tr td.actif0 {
+	background: #f77;
+}
+
+table.imput {
+	margin: 1em auto;
+}
+table.imput tbody {
+	margin: 1em auto;
+}
+table.imput th, table.imput td {
+	vertical-align: top;
+	padding: 1px 2px;
+}
+table.imput th {
+	text-align: right;
+	font-weight: normal;
+}
+table.imput td {
+}
+
+table.candidature {
+	font-size: small;
+}
+table.candidature td {
+	background: #eaeaea;
+	vertical-align: top;
+}
+table.candidature {
+}
+
+.nom {
+	font-weight: bold;
+}
+.prenom {
+}
+.intitule {
+	font-weight: bold;
+}
+.intit_ses,
+.universite,
+.petit {
+	font-size: smaller;
+}
+.transferts,
+.paye {
+}
+.barre {
+	text-decoration: line-through;
+}
+
+
+span.nonetudie,
+span.admis,
+span.ajourne,
+span.cas1,
+span.cas2,
+span.cas3 {
+	padding: 0 3px;
+}
+
+.nonetudie {
+	background: #fff;
+}
+.admis {
+	background: #0f0;
+}
+.ajourne {
+	background: #f00;
+}
+.cas1 {
+	background: #ccc;
+}
+.cas2 {
+	background: #999;
+}
+.cas3 {
+	background: #666;
+}
+
+table.hovertd tbody tr td.ho {
+	padding: 0;
+}
+table.hovertd tbody tr td.ho label {
+	padding: 1px 5px;
+}
+table.hovertd tbody tr td.ho input {
+	width: 1em;
+	margin: 1px 3px;
+}
+.pwd0 {
+	background: #f33;
+}
+.pwd1 {
+	background: #f73;
+}
+table.hovertd tbody tr:hover td.ho,
+table.hover tbody tr:hover,
+table.stats tbody tr:hover,
+table.stats tbody tr.pair:hover,
+table.tableau tbody tr:hover,
+table.tableau tbody tr.pair:hover,
+table.tableau tbody tr:hover .pwd0,
+table.tableau tbody tr:hover .pwd1,
+table.donnees tbody tr:hover,
+table.donnees tbody tr.pair:hover,
+table.tableau tr:hover .nonetudie,
+table.tableau tr:hover .admis,
+table.tableau tr:hover .ajourne,
+table.tableau tr:hover .cas1,
+table.tableau tr:hover .cas2,
+table.tableau tr:hover .cas3,
+table.donnees tr:hover .nonetudie,
+table.donnees tr:hover .admis,
+table.donnees tr:hover .ajourne,
+table.donnees tr:hover .cas1,
+table.donnees tr:hover .cas2,
+table.donnees tr:hover .cas3,
+table.stats tr:hover .nonetudie,
+table.stats tr:hover .admis,
+table.stats tr:hover .ajourne,
+table.stats tr:hover .cas1,
+table.stats tr:hover .cas2,
+table.stats tr:hover .cas3
+{
+	background: #ffb;
+}
+
+table.simple td {
+	border: 1px solid #777;
+}
+
+.particulier {
+	background: #fc0;
+}
+code {
+	font-family: 'courier new', monospace;
+	font-weight: bold;
+	color: #444;
+}
+kbd {
+	font-family: 'courier new', monospace;
+	font-weight: bold;
+}
+.mono {
+	font-family: 'courier new', monospace;
+}
+
+.cv {
+}
+div.res {
+	border: 2px solid #ccc;
+	padding: 0.5em;
+	margin: 0.5em 0;
+	background: #eee;
+}
+div.res:hover {
+	border: 2px solid #333;
+	background: #fff;
+}
+.res a.critere {
+	text-decoration: none;
+	line-height: 1em;
+	padding: 0 1px;
+	border: 1px solid #999;
+	background: #ddd;
+}
+.res a.critere:hover {
+	border: 1px solid #333;
+	background: #fff;
+}
+sup.m {
+	font-family: 'courier new', monospace;
+}
+
+.pagination strong {
+	position: relative;
+	top: -10px;
+}
+.pagination a {
+	padding: 0 5px;
+}
+.pagination a img {
+	border: 1px solid #fff;
+	opacity: 0.5;
+}
+.pagination a img:hover {
+	opacity: 1;
+}
+.sep {
+	padding: 0 0.5em;
+}
+.sepp {
+	padding: 0 1em;
+}
+
+a:focus {
+}
+
+
+.examen {
+	font-family: 'courier new', monospace;
+}
+span.examen span {
+	background: #000;
+	color: #fff;
+}
+.ampmoui {
+	background: #999;
+}
+.addexam {
+	text-align: right;
+	font-size: smaller;
+	padding-bottom: 3px;
+}
+tr.groupe td {
+	background: #ccc;
+	font-weight: bold;
+	text-align: right;
+}
+
+.plusieurs {
+	font-size: 0.85em;
+	font-weight: normal;
+}
+
+.fright {
+	float: right;
+	margin-left: 1em;
+	padding-right: 0.3em;
+}
+sup {
+	line-height: 0.1em;
+	height: 1px;
+}
+
+
+div.ev {
+    font-size: smaller;
+    line-height: 1em;
+    margin: 0 0 0.2em 0;
+}
+div.ev div.co {
+    font-weight: bold;
+}
+div.ev a * {
+    text-decoration: none;
+}
+div.ev a:hover * {
+    text-decoration: underline;
+}
+div.ev div.li {
+    font-style: italic;
+}
+
+#examens {
+}
+#examens .dateExamen {
+	margin: 1em 0 0 0;
+}
+#examens h4 {
+	padding: 0px 0.5em 2px 0.5em;
+	margin: 0;
+	font-size: larger;
+}
+#examens h4 span.J {
+	display: block;
+	float: left;
+	text-align: right;
+	margin-right: 1em;
+	font-family: 'courier new', monospace;
+	/*
+	width: 5em;
+	*/
+}
+#examens h4 span.date {
+	display: block;
+	float: left;
+	margin-right: 1em;
+	/*
+	text-align: right;
+	width: 12em;
+	*/
+}
+#examens .nbExams {
+	text-align: right;
+	display: block;
+	font-weight: normal;
+}
+#examens div.evs {
+    line-height: 1em;
+    margin: 0;
+	padding: 4px 0.5em 2px 0.5em;
+}
+#examens div.ev {
+    font-size: 0.9em;
+    line-height: 1em;
+    margin: 0;
+	clear: both;
+}
+#examens div.ev div.co {
+	float: left;
+	margin-right: 1em;
+    line-height: 1em;
+}
+#examens div.ev div.li {
+	float: left;
+    line-height: 1em;
+}
+#examens table.examens {
+	margin: 0;
+/*
+	width: 49%
+*/
+}
+#examens table.examens thead th {
+	font-size: 0.9em;
+}
+#examens table.foad {
+}
+#examens table.mooc {
+}
+#examens table.local {
+}
+#examens table.distant {
+}
+
+
+/*
+*/
+#examens .dateExamen {
+	border: 2px solid #333;
+}
+#examens h4 {
+	background: #333;
+	color: #fff;
+}
+#examens div.evs {
+	background: #aaa;
+	background: #f77;
+}
+
+
+/*
+*/
+button.datepick-trigger {
+	line-height: 1em;
+	vertical-align: middle;
+}
+
+table.tableau th.vertical,
+th.vertical {
+	vertical-align: bottom;
+	text-align: center;
+}
+th.vertical div {
+	padding-left: 5px;
+	transform: rotate(270deg);
+	-ms-transform:rotate(270deg); /* IE 9 */
+	-moz-transform:rotate(270deg); /* Firefox */
+	-webkit-transform:rotate(270deg); /* Safari and Chrome */
+	-o-transform:rotate(270deg); /* Opera */
+	width: 1em;
+	margin: 0 auto;
+	text-align: center;
+	white-space: nowrap;
+}
+th.vertical div span {
+}
+
+
+/*
+div#navigation,
+table.tableau thead th {
+	background: #99a;
+}
+div.ancien,
+div.diplome,
+table.stats td {
+	border: 1px solid #99a;
+}
+
+table.formulaire td.separation {
+	background: #778;
+}
+div#identification,
+.dossier_candidature h2 {
+	border-bottom: 1px solid #778;
+}
+table.tableau td {
+	border: 1px solid #778;
+}
+
+table.formulaire tr {
+	background: #dde;
+}
+table.tableau th.annee,
+.annee {
+	background: #334;
+}
+*/

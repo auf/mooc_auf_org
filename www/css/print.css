@@ -1,0 +1,33 @@
+#entete,
+#pied,
+#navigation {
+	display: none;
+}
+.msgok,
+.noprint {
+	display: none;
+}
+a {
+	text-decoration: none;
+}
+hr.saut {
+	page-break-after: always;
+	margin: 0;
+	padding: 0;
+	height: 1px;
+	visibility: hidden;
+}
+.cadre,
+.apercu {
+    border: 0px;
+    padding: 0;
+    margin: 0;
+}
+h2.formulaire {
+	color: #000;
+	border-bottom: 1px solid #ccc;
+	background: transparent;
+}
+#examens .dateExamen {
+	border: 0px;
+}

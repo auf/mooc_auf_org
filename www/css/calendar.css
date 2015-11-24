@@ -1,0 +1,68 @@
+/* calendar */
+table.calendar {
+	margin: 0 auto;
+	border-collapse: separate;
+}
+tr.calendar-row {
+}
+table.calendar td {
+	padding: 3px 5px;
+	vertical-align: top;
+}
+td.calendar-day, td.calendar-day-np {
+	width:128px;
+}
+td.calendar-day {
+	min-height: 80px;
+	position:relative;
+	background:#eee;
+}
+td.highlighted {
+	background: #ffa;
+}
+* html div.calendar-day {
+	height:80px;
+}
+td.calendar-day-np {
+	background:#999;
+	min-height:80px;
+}
+* html div.calendar-day-np {
+	height:80px;
+}
+td.calendar-day-head {
+	background:#555;
+	color: #fff;
+	font-weight:bold;
+	text-align:center;
+	width:128px;
+}
+div.day-number {
+	background:#555;
+	color:#fff;
+	font-weight:bold;
+	padding: 3px 5px;
+	float: right;
+	width: 1em;
+	text-align:center;
+	margin: -3px -5px 0 0;
+}
+
+
+div.ev {
+	font-size: smaller;
+	line-height: 1em;
+	margin: 0 0 0.2em 0;
+}
+div.ev div.co {
+	font-weight: bold;
+}
+div.ev a * {
+	text-decoration: none;
+}
+div.ev a:hover * {
+	text-decoration: underline;
+}
+div.ev div.li {
+	font-style: italic;
+}

@@ -1,0 +1,38 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+}
+img {
+	border: 0px;
+}
+table {
+	border-collapse: collapse;
+	margin: 1em auto;
+	padding: 0;
+	text-align: center;
+}
+th, td {
+	margin: 0;
+	padding: 0.3em;
+	vertical-align: top;
+	border: 1px solid #ccc;
+}
+.erreur {
+	font-weight: bold;
+	color: #f00;
+}
+.c {
+	text-align: center ;
+}
+a {
+	color: #036;
+}
+a:visited {
+	color #630;
+}
+a:hover {
+	color: #000;
+}
+
