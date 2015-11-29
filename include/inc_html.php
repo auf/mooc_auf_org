@@ -19,25 +19,24 @@ $htmlDatePick = '<script type="text/javascript" src="/js/jquery.datepick.js"></s
 <script type="text/javascript" src="/js/jquery.datepick-fr.js"></script>
 <link rel="stylesheet" type="text/css" href="/js/jquery.datepick.css" />
 ' ;
-$htmlMagnificPopup = '
-<script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="/js/Magnific-Popup-0.9.9/dist/jquery.magnific-popup.min.js"></script>
-<link rel="stylesheet" type="text/css" href="/js/Magnific-Popup-0.9.9/dist/magnific-popup.css" />
-' ;
 $htmlPhotobox = $htmlJquery172
 . '<script type="text/javascript" src="/js/photobox-1.7.1/photobox/photobox.min.js"></script>
 <link rel="stylesheet" type="text/css" href="/js/photobox-1.7.1/photobox/photobox.css" />
 <link rel="stylesheet" type="text/css" href="/js/photobox-1.7.1/photobox/photobox.ie.css" />
 ' ;
 /*
-*/
+$htmlMagnificPopup = '
+<script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/js/Magnific-Popup-0.9.9/dist/jquery.magnific-popup.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/js/Magnific-Popup-0.9.9/dist/magnific-popup.css" />
+' ;
 $htmlCombo = '
 <script type="text/javascript" src="~/js/jquery.simpleCombo.js"></script>
 ';
-
 $htmlChecked = '
 <script type="text/javascript" src="~/js/checked.js"></script>
 ';
+*/
 
 $dtd2sansBody= '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/css/mooc.css" rel="stylesheet" type="text/css" media="screen, print" />
