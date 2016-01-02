@@ -83,6 +83,7 @@ else if ( $_SESSION["id"] == "03")
 else
 { 
 	?>
+	<a href="/en_cours.php">Inscriptions en cours</a> |
 	<a href="/recherche/">Recherche, export</a> |
 	<a href="/statistiques/">Statistiques</a>
 	| <a href="/inscrits/index.php">Gestion des inscrits</a> 
