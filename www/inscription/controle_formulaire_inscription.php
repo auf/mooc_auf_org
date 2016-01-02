@@ -42,6 +42,7 @@ $message_erreur = "" ;
 if ( $_POST['formulaire'] != "maj" ) 
 {
 	//$date_naissance = $T["annee_n"] . "-" . $T["mois_n"] . "-" . $T["jour_n"] ;
+	/*
 	if ( ($tabInscription["idmooc"] == "1") AND isset($T["id_mooc"]) AND ($T["id_mooc"]!="") )
 	{
 		$req_d = "SELECT id_dossier, id_mooc FROM dossier
@@ -61,6 +62,7 @@ if ( $_POST['formulaire'] != "maj" )
 	}
 	else
 	{
+	*/
 		$req_d = "SELECT id_dossier, id_mooc FROM dossier
 			WHERE ref_session=$id_session
 			AND email='".mysqli_real_escape_string($cnx, trim($T["email"]))."'" ;
@@ -74,7 +76,9 @@ if ( $_POST['formulaire'] != "maj" )
 			$message_doublon = messageDoublon($id_dossier_doublon, $T["email"]) ;
 			$erreur_doublon = TRUE ;
 		}
+	/*
 	}
+	*/
 }
 
 //
