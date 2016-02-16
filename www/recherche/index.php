@@ -311,16 +311,17 @@ if (
 		}
 		else
 		{
-			$champs = array("id_mooc", "email", "genre", "nom", "prenom", "naissance", "age",
-				"lieu_naissance", "pays_naissance", "pays_nationalite", "pays_residence", "situation_actu", "sit_autre",
-				"ident_nature", "ident_autre", "ident_numero", "ident_date", "ident_lieu",
-				"id_dossier", "date_inscrip", "date_maj",
-				"id_imputation", "date_imput", "date_maj_imput", "lieu_paiement", "montant", "monnaie", "imputation", "lieu_examen",
-				"etat_dossier", "date_maj_etat") ;
 
 			if ( intval($_SESSION["id"]) > 9 )
 			{
-				$req_export = "SELECT id_mooc, email, genre, dossier.nom, prenom, naissance,
+				$champs = array("id_dossier", "id_mooc", "email", "genre", "nom", "prenom", "naissance", "age",
+					"lieu_naissance", "pays_naissance", "pays_nationalite", "pays_residence", "situation_actu", "sit_autre",
+					"ident_nature", "ident_autre", "ident_numero", "ident_date", "ident_lieu",
+					"id_dossier", "date_inscrip", "date_maj",
+					"id_imputation", "date_imput", "date_maj_imput", "lieu_paiement", "montant", "monnaie", "imputation", "lieu_examen",
+					"etat_dossier", "date_maj_etat") ;
+
+				$req_export = "SELECT id_dossier, id_mooc, email, genre, dossier.nom, prenom, naissance,
 					(DATEDIFF(date_examen, naissance) DIV 365.25) AS age,
 					lieu_naissance, pays_naissance, pays_nationalite, pays_residence, situation_actu, sit_autre,
 					ident_nature, ident_autre, ident_numero, ident_date, ident_lieu,
@@ -330,14 +331,40 @@ if (
 			}
 			else
 			{
-				$req_export = "SELECT id_mooc, email, genre, dossier.nom, prenom, naissance,
-					(DATEDIFF(date_examen, naissance) DIV 365.25) AS age,
-					lieu_naissance, pays_naissance, pays_nationalite, pays_residence, situation_actu, sit_autre,
-					ident_nature, ident_autre, ident_numero, ident_date, ident_lieu,
-					id_dossier, date_inscrip, date_maj,
-					id_imputation, date_imput, date_maj_imput, lieu_paiement, montant, imputations.monnaie, imputation, lieu_examen,
-					etat_dossier, date_maj_etat,
-					ref_institution, universite, groupe, ref_discipline, intitule, intit_ses, id_session " ;
+				if ( $_SESSION["id"] === "00" ) {
+					$champs = array("id_dossier", "pwd", "id_mooc", "email", "genre", "nom", "prenom", "naissance", "age",
+						"lieu_naissance", "pays_naissance", "pays_nationalite", "pays_residence", "situation_actu", "sit_autre",
+						"ident_nature", "ident_autre", "ident_numero", "ident_date", "ident_lieu",
+						"id_dossier", "date_inscrip", "date_maj",
+						"id_imputation", "date_imput", "date_maj_imput", "lieu_paiement", "montant", "monnaie", "imputation", "lieu_examen",
+						"etat_dossier", "date_maj_etat") ;
+
+					$req_export = "SELECT id_dossier, pwd, id_mooc, email, genre, dossier.nom, prenom, naissance,
+						(DATEDIFF(date_examen, naissance) DIV 365.25) AS age,
+						lieu_naissance, pays_naissance, pays_nationalite, pays_residence, situation_actu, sit_autre,
+						ident_nature, ident_autre, ident_numero, ident_date, ident_lieu,
+						id_dossier, date_inscrip, date_maj,
+						id_imputation, date_imput, date_maj_imput, lieu_paiement, montant, imputations.monnaie, imputation, lieu_examen,
+						etat_dossier, date_maj_etat,
+						ref_institution, universite, groupe, ref_discipline, intitule, intit_ses, id_session " ;
+				}
+				else {
+					$champs = array("id_dossier", "id_mooc", "email", "genre", "nom", "prenom", "naissance", "age",
+						"lieu_naissance", "pays_naissance", "pays_nationalite", "pays_residence", "situation_actu", "sit_autre",
+						"ident_nature", "ident_autre", "ident_numero", "ident_date", "ident_lieu",
+						"id_dossier", "date_inscrip", "date_maj",
+						"id_imputation", "date_imput", "date_maj_imput", "lieu_paiement", "montant", "monnaie", "imputation", "lieu_examen",
+						"etat_dossier", "date_maj_etat") ;
+
+					$req_export = "SELECT id_dossier, id_mooc, email, genre, dossier.nom, prenom, naissance,
+						(DATEDIFF(date_examen, naissance) DIV 365.25) AS age,
+						lieu_naissance, pays_naissance, pays_nationalite, pays_residence, situation_actu, sit_autre,
+						ident_nature, ident_autre, ident_numero, ident_date, ident_lieu,
+						id_dossier, date_inscrip, date_maj,
+						id_imputation, date_imput, date_maj_imput, lieu_paiement, montant, imputations.monnaie, imputation, lieu_examen,
+						etat_dossier, date_maj_etat,
+						ref_institution, universite, groupe, ref_discipline, intitule, intit_ses, id_session " ;
+				}
 				array_push($champs, "ref_institution", "universite", "groupe", "ref_discipline", "intitule", "intit_ses", "id_session") ;
 			}
 			$tableau = array() ;
