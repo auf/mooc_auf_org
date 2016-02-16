@@ -163,8 +163,10 @@ function liste_tri_recherche($name, $value)
 /*****************************************************************************/
 /*****************************************************************************/
 
-function formulaire_recherche($cnx)
+// Ajout d'un paramètre pour exporter numéro de dossier et mdp
+function formulaire_recherche($cnx, $export="")
 {
+	echo "<form method='post' action='/recherche/session.php'>" ;
 	echo "<form method='post' action='/recherche/session.php'>" ;
 	echo "<table class='formulaire'>\n<tbody\n" ;
 	// 

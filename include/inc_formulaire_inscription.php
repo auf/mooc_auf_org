@@ -75,6 +75,8 @@ $CANDIDATURE = array(
 
 	"id_dossier" => array(
 		"Numéro de dossier"),
+	"pwd" => array(
+		"Mot de passe"),
 	"date_inscrip" => array(
 		"Date de dépôt de l'inscription"),
 	"date_maj" => array(
